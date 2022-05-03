@@ -35,7 +35,7 @@
           <div class="knowledge-form__header">
             <h2 class="knowledge-form__title">Создать область знаний</h2>
           </div>
-          <form action="services/add_knowledge.php" method="post">
+          <form action="add_knowledge.php" method="post">
             <label>
               <span class="knowledge-form__label">Название области знаний:</span>
               <input class="knowledge-form__input" name="name" type="text" placeholder="Спорт">
