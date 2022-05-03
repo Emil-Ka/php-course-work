@@ -11,3 +11,5 @@ if (!$result) {
 }
 
 echo $result;
+?> 
+<h1>hello</h1>
