@@ -5,7 +5,7 @@ $now = date('Y-m-d');
 
 $host = "std-mysql";
 $user = "std_1830_hashtag";
-$pass = "rootroot";
+$pass = "rootroo";
 $database = "std_1830_hashtag";
 
 $mysql = new mysqli($host, $user, $pass, $database);
