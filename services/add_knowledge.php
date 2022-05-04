@@ -14,15 +14,15 @@ if ($mysqli->connect_errno) {
   echo 
     '<h1 class="error">Соединение не удалось: '.$mysqli->connect_error.'</h1>';
   exit();
-}
+};
 
 $result = $mysql->query("INSERT INTO `field` VALUES (NULL, '$name', '$description', '$now')");
 
 if ($mysqli->errno) {
   echo 
-    '<h1 class="error">Ошибка: '.$mysqli->error.'</h1>'
+    '<h1 class="error">Ошибка: '.$mysqli->error.'</h1>';
   exit();
-}
+};
 
 $mysqli->close();
 
