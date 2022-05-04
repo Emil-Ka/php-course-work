@@ -26,16 +26,20 @@
               $pass = "rootroot";
               $database = "std_1830_hashtag";
 
-              $mysql = new mysqli($host, $user, $pass, $database);
-              $result = $mysql->query("SELECT * FROM `field`");
+              $mysql = mysqli_connect($host, $user, $pass, $database);
+
+              $result = mysqli_query($mysql, "SELECT * FROM `field`");
               $result = mysqli_fetch_all($result);
-              
+              $result = array_reverse($result);
+
               for ($arr = 0; $arr < count($result); $arr++) {
                 echo
                   '<li>
                     <h3>'.$result[$arr][1].'</h3>
                   </li>';
               };
+
+              mysqli_close($mysql);
             ?>
           </ul>
         </div>

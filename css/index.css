@@ -121,6 +121,7 @@ html {
 .knowledge-list {
   border: 4px solid #3C848E;
   border-radius: 12px;
+  max-width: 40%;
 }
 .knowledge-list__header {
   padding: 18px 80px;
@@ -140,6 +141,7 @@ html {
 }
 .knowledge-list li {
   padding: 22px 0;
+  overflow-wrap: break-word;
 }
 .knowledge-list li:not(:last-child) {
   border-bottom: 1px solid #C4C4C4;
@@ -211,4 +213,19 @@ html {
 }
 .knowledge-form__btn:hover {
   background: var(--green-dark);
+}
+
+.error {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #990000;
+  margin: 30px auto;
+}
+
+.error-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 20px auto;
 }

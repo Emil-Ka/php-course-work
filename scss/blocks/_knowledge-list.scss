@@ -1,6 +1,7 @@
 .knowledge-list {
   border: 4px solid #3C848E;
   border-radius: 12px;
+  max-width: 40%;
 
   &__header {
     padding: 18px 80px;
@@ -23,6 +24,7 @@
 
   li {
     padding: 22px 0;
+    overflow-wrap: break-word;
 
     &:not(:last-child) {
       border-bottom: 1px solid #C4C4C4;
