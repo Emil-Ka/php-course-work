@@ -5,7 +5,7 @@ $pass = "rootroot";
 $database = "std_1830_hashtag";
 $mysql = new mysqli($host, $user, $pass, $database);
 $result = $mysql->query("SELECT * FROM `field`");
-$result = $result->fetch_assoc();
+$result = mysqli_fetch_all($result);
 
 if (!$result) {
   echo 'err';
