@@ -28,10 +28,10 @@
               $mysql = new mysqli($host, $user, $pass, $database);
               $result = $mysql->query("SELECT * FROM `field`");
               $result = mysqli_fetch_all($result);
-              foreach($result as $value) {
+              for ($arr = 0; $arr < count($result); $arr++) {
                 echo
                   '<li>
-                    <h3>'.$value.'</h3>
+                    <h3>'.$result[$arr]['name'].'</h3>
                   </li>';
               };
             ?>
