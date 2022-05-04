@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Курсовая работа</title>
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
@@ -25,9 +25,11 @@
               $user = "std_1830_hashtag";
               $pass = "rootroot";
               $database = "std_1830_hashtag";
+
               $mysql = new mysqli($host, $user, $pass, $database);
               $result = $mysql->query("SELECT * FROM `field`");
               $result = mysqli_fetch_all($result);
+              
               for ($arr = 0; $arr < count($result); $arr++) {
                 echo
                   '<li>
@@ -41,7 +43,7 @@
           <div class="knowledge-form__header">
             <h2 class="knowledge-form__title">Создать область знаний</h2>
           </div>
-          <form action="add_knowledge.php" method="post">
+          <form action="services/add_knowledge.php" method="post">
             <label>
               <span class="knowledge-form__label">Название области знаний:</span>
               <input class="knowledge-form__input" name="name" type="text" placeholder="Спорт">
