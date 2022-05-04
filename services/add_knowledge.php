@@ -4,7 +4,7 @@ $description = $_POST['description'];
 $now = date('Y-m-d');
 
 $host = "std-mysql";
-$user = "std_1830_hashtag";
+$user = "std_1830_hashta";
 $pass = "rootroot";
 $database = "std_1830_hashtag";
 
