@@ -10,17 +10,17 @@ $database = "std_1830_hashtag";
 
 $mysql = new mysqli($host, $user, $pass, $database);
 
-if ($mysqli->connect_errno) {
-  echo 
-    '<h1 class="error">Соединение не удалось: '.$mysqli->connect_error.'</h1>';
-  exit();
-};
+// if ($mysqli->connect_errno) {
+//   echo 
+//     '<h1 class="error">Соединение не удалось: '.$mysqli->connect_error.'</h1>';
+//   exit();
+// };
 
 $result = $mysql->query("INSERT INTO `field` VALUES (NULL, '$name', '$description', '$now')");
 
-if ($mysqli->errno) {
+if (!$result) {
   echo 
-    '<h1 class="error">Ошибка: '.$mysqli->error.'</h1>';
+    '<h1 class="error">Не удалось добавить пользователя</h1>';
   exit();
 };
 
