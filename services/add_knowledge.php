@@ -18,13 +18,13 @@ $mysql = new mysqli($host, $user, $pass, $database);
 
 $result = $mysql->query("INSERT INTO `field` VALUES (NULL, '$name', '$description', '$now')");
 
-if (!$result) {
-  echo 
-    '<h1 class="error">Не удалось добавить пользователя</h1>';
-  exit();
-};
+// if (!$result) {
+//   echo 
+//     '<h1 class="error">Не удалось добавить пользователя</h1>';
+//   exit();
+// };
 
-$mysqli->close();
+//$mysqli->close();
 
 header('Location: ../index.php');
 ?>
