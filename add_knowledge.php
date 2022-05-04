@@ -11,5 +11,5 @@ if (!$result) {
   echo 'err';
 }
 
-echo $result;
+print_r($result);
 ?>
