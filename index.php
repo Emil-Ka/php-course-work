@@ -31,7 +31,7 @@
               for ($arr = 0; $arr < count($result); $arr++) {
                 echo
                   '<li>
-                    <h3>'.$result[$arr]['name'].'</h3>
+                    <h3>'.$result[$arr][1].'</h3>
                   </li>';
               };
             ?>
