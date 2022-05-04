@@ -20,15 +20,21 @@
             <h2 class="knowledge-list__title">Области знаний</h2>
           </div>
           <ul>
-            <li>
-              <h3>Кулинария</h3>
-            </li>
-            <li>
-              <h3>Кулинария</h3>
-            </li>
-            <li>
-              <h3>Кулинария</h3>
-            </li>
+            <?php
+              $host = "std-mysql";
+              $user = "std_1830_hashtag";
+              $pass = "rootroot";
+              $database = "std_1830_hashtag";
+              $mysql = new mysqli($host, $user, $pass, $database);
+              $result = $mysql->query("SELECT * FROM `field`");
+              $result = $result->fetch_assoc();
+              foreach($result as $value) {
+                echo
+                  '<li>
+                    <h3>'.$value.'</h3>
+                  </li>'
+              };
+            ?>
           </ul>
         </div>
         <div class="knowledge-form">
